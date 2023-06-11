@@ -193,7 +193,7 @@ export const Room = ({
             )}
 
             {stream ? (
-                <video muted ref={setVideoElement} className={videoClasses()} />
+                <video ref={setVideoElement} className={videoClasses()} />
             ) : (
                 <Typography
                     variant="h4"

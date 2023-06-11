@@ -68,6 +68,7 @@ SCREEGO_TRUST_PROXY_HEADERS=false
 #   all: User login is always required
 #   turn: User login is required for TURN connections
 #   none: User login is never required
+#   proxy: Authentication is provided by proxy
 SCREEGO_AUTH_MODE=turn
 
 # Defines origins that will be allowed to access Screego (HTTP + WebSocket)
@@ -101,3 +102,7 @@ SCREEGO_LOG_LEVEL=info
 # If screego should expose a prometheus endpoint at /metrics. The endpoint
 # requires basic authentication from a user in the users file.
 SCREEGO_PROMETHEUS=false
+
+# If screego is set to AuthMode proxy
+# Proxy Header to use to find the requesters username
+SCREEGO_USERNAME_PROXY_HEADER=x-Authentik-Username

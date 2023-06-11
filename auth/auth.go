@@ -4,10 +4,11 @@ import (
 	"encoding/csv"
 	"encoding/json"
 	"errors"
-	"github.com/screego/server/config"
 	"io"
 	"net/http"
 	"os"
+
+	"github.com/screego/server/config"
 
 	"github.com/gorilla/sessions"
 	"github.com/rs/zerolog/log"
